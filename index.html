@@ -159,12 +159,13 @@
           </section>
 
           <section id="contact" class="border_nes">
-            <div>
-              <h2>Let's Talk!</h2>
-            </div>
-
             <form id="contact_form">
-              <table class="form_wrapper">
+              <table class="form_table">
+                <tr>
+                  <td colspan="3">
+                    <h5>Let's Talk!</h5>
+                  </td>
+                </tr>
                 <tr>
                   <td><label for="contact_name">Name</label></td>
                   <td>
@@ -175,9 +176,10 @@
                       placeholder="your name"
                     />
                   </td>
-                  <td>
-                    <span class="error" id="name_error"></span>
-                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="error" id="name_error"></span><br /></td>
                 </tr>
 
                 <tr>
@@ -190,9 +192,10 @@
                       placeholder="your subject"
                     />
                   </td>
-                  <td>
-                    <span class="error" id="subject_error"></span>
-                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="error" id="subject_error"></span><br /></td>
                 </tr>
 
                 <tr>
@@ -204,13 +207,15 @@
                       placeholder="your email"
                     />
                   </td>
-                  <td>
-                    <span class="error" id="email_error"></span>
-                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="error" id="email_error"></span><br /></td>
                 </tr>
 
                 <tr>
-                  <td colspan="3">
+                  <td></td>
+                  <td>
                     <button type="submit">Send Message</button>
                   </td>
                 </tr>

@@ -111,6 +111,8 @@ main {
 /* FORM ELEMENTS */
 .form_table {
   width: 100%;  
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .form_row {
