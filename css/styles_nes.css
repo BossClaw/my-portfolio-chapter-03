@@ -107,7 +107,6 @@ main {
   min-height: calc(70vh);
 }
 
-
 /* FORM ELEMENTS */
 .form_table {
   width: 100%;  
@@ -444,4 +443,17 @@ footer {
   border: 3px solid red;
   width: 100px;
   height: 80px;
+}
+
+.ul_center {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ul_center h5 {
+  text-align: left;
+}
+
+.ul_center ul {
+  width: 50%;
 }
