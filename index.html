@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/crt.css" />
 
     <script defer src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
 
   <!-- NOTE - CRT DISABLED FOR NOW -->
@@ -78,21 +79,25 @@
             <div class="proj_gallery">
               <div class="side_col">
                 <div class="gallery_project">
-                  <img src="/img/proj.gif" class="proj_img" />
+                  <a class="proj_ahref" href="#projects" data-proj-index="1">
+                    <img src="/img/proj.gif" class="proj_img" />
+                  </a>
                   <button class="project_butt" data-proj-index="1">
                     Games
                   </button>
                 </div>
 
                 <div class="gallery_project">
-                  <img src="/img/proj.gif" />
+                  <a class="proj_ahref" href="#projects" data-proj-index="2">
+                    <img src="/img/proj.gif" />
+                  </a>
                   <button class="project_butt" data-proj-index="2">Vids</button>
                 </div>
               </div>
 
               <div class="center_col">
-                <div class="project_info" data-proj-index="0">
-                  <p>Project Click Call TO Action!</p>
+                <div class="project_info" data-proj-index="0">                  
+                  <span id="typed_cta"></span>
                 </div>
 
                 <!-- HIDDEN PROJ INFO AT START -->
@@ -107,7 +112,7 @@
                       Uranus by BossClaw</a
                     ></iframe
                   >
-                  <p>Game Dev!</p>
+                  <p>Game Dev!</p>                  
                 </div>
 
                 <div class="project_info" data-proj-index="4">
@@ -137,12 +142,16 @@
 
               <div class="side_col">
                 <div class="gallery_project">
-                  <img src="/img/proj.gif" />
+                  <a class="proj_ahref" href="#projects" data-proj-index="3">
+                    <img src="/img/proj.gif" />
+                  </a>
                   <button class="project_butt" data-proj-index="3">Code</button>
                 </div>
 
                 <div class="gallery_project">
-                  <img src="/img/proj.gif" />
+                  <a class="proj_ahref" href="#projects" data-proj-index="4">
+                    <img src="/img/proj.gif" />
+                  </a>
                   <button class="project_butt" data-proj-index="4">Illo</button>
                 </div>
               </div>
@@ -399,6 +408,16 @@
             alert("You've entered valid info, congrats!");
           }
         });
+    </script>
+
+    <script>
+      var typed_cta = new Typed("#typed_cta", {
+        strings: [          
+          "Just click on a project to learn more!",
+          "(thankully Typed.js worked flawlessly!)",
+        ],
+        typeSpeed: 50,
+      });      
     </script>
   </body>
 </html>
