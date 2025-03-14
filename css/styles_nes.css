@@ -109,7 +109,7 @@ main {
 
 /* FORM ELEMENTS */
 .form_table {
-  width: 100%;  
+  width: 100%;
   max-width: 600px;
   margin-inline: auto;
 }
@@ -333,9 +333,9 @@ div.gallery_project {
 .project_info {
   background-color: var(--mid);
   display: flex;
-  flex: 1 1 0;  
+  flex: 1 1 0;
   align-content: center;
-  justify-content: center; 
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -419,7 +419,6 @@ footer {
     justify-content: center;
   }
 
-  
   /* REORDER THE PROJS TO STICK THE SIDE COLUMNS TOGETHER */
   .proj_gallery .center_col {
     order: 10;
@@ -437,9 +436,8 @@ footer {
   }
 }
 
-
 /* JS LIB */
-#granim-canvas{
+#granim-canvas {
   border: 3px solid red;
   width: 100px;
   height: 80px;
