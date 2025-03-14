@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="css/crt.css" />
 
     <script defer src="js/script.js"></script>
-    <script src="lib/choreographer.min.js"></script>
-    <script defer src="lib/granim.min.js"></script>
   </head>
 
   <!-- NOTE - CRT DISABLED FOR NOW -->
@@ -401,45 +399,6 @@
             alert("You've entered valid info, congrats!");
           }
         });
-
-      // INIT THE GRANIM JS LIB
-      document.addEventListener("DOMContentLoaded", () => {
-        console.log("START GRANIM");
-        // var granimInstance = new Granim({
-        //   element: "#granim-canvas",
-        //   direction: "left-right",
-        //   isPausedWhenNotInView: false,
-        //   states: {
-        //     "default-state": {
-        //       gradients: [
-        //         ["#ff9966", "#ff5e62"],
-        //         ["#00F260", "#0575E6"],
-        //         ["#e1eec3", "#f05053"],
-        //       ],
-        //     },
-        //   },
-        // });
-
-        console.log("SETUP GRANIM[" + granimInstance + "]");
-      });
-    </script>
-    <script>
-      var choreographer = new Choreographer({
-        animations: [
-          {
-            range: [-1, window.innerHeight * 4],
-            selector: "#footer",
-            type: "scale",
-            style: "scale",
-            from: 0.0,
-            to: 1,
-          },
-        ],
-      });
-
-      window.addEventListener("scroll", function () {
-        choreographer.runAnimationsAt(window.pageYOffset);
-      });
     </script>
   </body>
 </html>
